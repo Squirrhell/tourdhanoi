@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Jeu de réflexion</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style/style.css"/>
+	<link rel="icon" href="ISN4.png"/>
+	<script type="text/javascript" src="jeutest.js"></script>
+</head>
+
+<body onkeypress="javascript:activation(event)" >
+	<div id="commande_grd"><img src="style/commandes.png" atl="commandes" style="width:700px;height:300px;display:block;margin:auto;"/><input type="button" value="Ok" onclick="javascript:fermeture()"/></div>
+	<h1>les tours d'hanoï</h1>
+	<div><br/><br/><br/><br/></div>
+	
+	<div id="navigateur"></div>
+	<div id="parametres">
+		<p>
+			Paramètres du jeu<br/>
+			Rentrez le nombre de disques à générer (de 3 à 8):
+		</p>
+		<input type="text" value="" id="taille"/>
+		<input type="button" value="génération du jeu" onclick="javascript:tableau()"/>
+		<p></p>
+		<h4>Commandes</h4>
+		<img src="style/commandes.png" atl="commandes" id="commandes" title="Cliquez pour agrandir l'image." onclick="javascript:affiche()"/>
+		<div id="score"></div>
+	</div>
+	
+
+	<!--énnoncé des règles-->
+	<div id="regle">
+		<span style="text-align:center;color:red;">CE SITE N'EST PAS COMPATIBLE AVEC D'AUTRES NAVIGATEURS QUE MOZILLA FIREFOX</span><br/><br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le principe de ce jeu est de déplacer la tour de disque de la colonne de gauche, vers la colonne de droite, disque par disque, selon les règles suivantes :<br/><br/><br/>
+			- On ne peut poser un disque que sur un disque plus gros ou sur un espace vide,<br/><br/>
+			- On ne peut pas déplacer plusieurs disques en même temps,<br/><br/>
+			- On ne peut pas déplacer un disque qui est sous un autre disque. 
+			
+	</div>
+	<!--le bloc dans lequel je déroulera le jeu-->
+	<div id="jeu"><img src="style/tour2.jpg" atl="exemple de jeu" id="tour_image"/></div>
+
+	<!--div dans laquelle la valeur de vérif sera prise.-->
+	<input id="verif" type="text" value="2"/>
+	<input id="lock" type="text" value="1"/>
+</body>
+</html>

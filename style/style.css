@@ -1,0 +1,148 @@
+h1
+{
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	position: absolute;
+	margin-left: -8px;
+	margin-top: -8px;
+	width: 100%;
+	background: #656565;
+	font-size: 50px;
+}
+
+#start
+{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+#parametres
+{
+	float:left;
+	width: 20%;
+	border: 5px solid black;
+	font-size: 20px;
+	text-align: center;
+}
+
+#regle
+{
+	border: 5px solid black;
+	position: relative;
+	width: 20%;
+	float: right;
+	display : block;
+	padding: 15px;
+	text-align: justify;
+}
+
+#jeu
+{
+	position: relative;
+	width:50%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+table{
+	width : 100%;
+	border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+td{
+	/*border: 1px solid blue;*/
+	width:33%;
+	height:50px;
+	padding:0;
+}
+
+img
+{
+	width:100%;
+	height:50px;
+}
+
+input
+{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+#taille
+{
+	width: 25px;
+}
+
+#selecteur
+{
+	width: 90px;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	
+}
+
+#verif
+{
+	display:none;
+}
+
+#lock
+{
+	display:none;
+}
+
+#attentionimg
+{
+	width: 30px;
+	height: 30px;
+}
+
+#commandes
+{
+	width:100%;
+	height:20%;
+}
+
+#commande_grd
+{
+	display: none;
+	z-index: 99;
+	background-color: #ddd;
+	width:90%;
+	height: 90%;
+	position: absolute;
+
+}
+
+.ligne
+{
+	background-image:url(colonne.png);
+	background-repeat:no-repeat;
+    background-position: 50%;
+}
+
+#score
+{
+	display:none;
+	margin-bottom: 100px;
+	color: red;
+}
+
+#tour_image
+{
+	height: 500px;
+	width: 600px;
+}
